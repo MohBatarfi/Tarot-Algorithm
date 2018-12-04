@@ -98,9 +98,9 @@ subject to {
 
 main{
 
-	thisOplModel.generate();
-	cplex.solve();     
- 	var f = new IloOplOutputFile("output.txt");
-   	f.writeln(thisOplModel.printSolution());
+	thisOplModel.generate(); // generates the model
+	cplex.solve();     // Solve the constraints
+ 	var f = new IloOplOutputFile("output.txt"); // save the output
+   	f.writeln(thisOplModel.printSolution()); // print the output to the file
   	f.close();   
 }

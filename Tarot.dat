@@ -12,21 +12,25 @@ Courses= {"Database Systems", "Web App", "Big Data", "Intro to Computing",
 
 Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "Room6", "Room7", "Room8"};
 
-
+// These courses are assigned manually (Must be at this time, room)
 HardSign = {<1,{Mon, Wed, Fri},"Eckroth","Room1","Database Systems">, <2,{Mon, Wed, Fri},"TBA", "Room7", "Big Data">};
 
-
+// Course prefrences by persentage (columns are courses, rows are professors)
 CoursePrefs = [[1,0.1,1,0.1,0.1,0.5,0.1,1,0.5,0.1,0.1],
-				[0.1,1,0.1,0.1,0.5,1,0.1,0.1,0.1,0.5,0.1],
-				[0.5,0.1,0.1,0.1,0.1,0.1,1,0.1,1,1,0.1],
-				[0.1,0.1,0.1,0.1,1,0.5,0.1,0.1,0.1,0.1,1],
-				[0.1,0.1,0.1,1,1,0.1,0.1,0.1,0.1,0.1,0.1]];
-PeriodPrefs = [[1,1,1,0,1,1,1,1,1,0,1],
-				[1,1,1,0,1,1,1,1,1,0,1],
-				[1,1,1,0,1,1,1,1,1,0,1],
-				[1,1,1,0,1,1,1,1,1,0,1],
-				[0,0,0,1,0,0,0,0,0,1,0]];
+		[0.1,1,0.1,0.1,0.5,1,0.1,0.1,0.1,0.5,0.1],
+		[0.5,0.1,0.1,0.1,0.1,0.1,1,0.1,1,1,0.1],
+		[0.1,0.1,0.1,0.1,1,0.5,0.1,0.1,0.1,0.1,1],
+		[0.1,0.1,0.1,1,1,0.1,0.1,0.1,0.1,0.1,0.1]];
 
+// Preferred periods (columns are courses, rows are periods)
+PeriodPrefs = [[1,1,1,0,1,1,1,1,1,0,1],
+		[1,1,1,0,1,1,1,1,1,0,1],
+		[1,1,1,0,1,1,1,1,1,0,1],
+		[1,1,1,0,1,1,1,1,1,0,1],
+		[0,0,0,1,0,0,0,0,0,1,0]];
+
+// Depending on how long is the course, Long Courses (75 mins), are only taught twice a week) 
+// Ex. Computer Nnetworks and Intro to Computing.
 LongCourses = {<"Database Systems", {Mon, Wed, Fri}>, <"Web App", {Mon, Wed, Fri}>, <"Big Data",  {Mon, Wed, Fri} >, <"Intro to Computing", {Mon, Wed}>,
                 <"Intro to Comp1",  {Mon, Wed, Fri}> , <"Intro to Comp1",  {Mon, Wed, Fri}>, <"Intro to Comp2",  {Mon, Wed, Fri}>, <"Discrete Structures",  {Mon, Wed, Fri}>, <"Soft Dev1",  {Mon, Wed, Fri}> , <"Operating Systems",
                  {Mon, Wed, Fri}>, <"Computer Networks",  {Mon, Wed}>,<"Computer Graphics",  {Mon, Wed, Fri}>};

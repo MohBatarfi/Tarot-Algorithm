@@ -1,0 +1,33 @@
+
+
+
+totalPeriods=5;
+NbPeriods=4;
+
+Weekdays={Mon, Wed, Fri};
+Professors= {"Eckroth", "Plante", "ElAarag", "Koc", "TBA"};
+Courses= {"Database Systems", "Web App", "Big Data", "Intro to Computing",
+                "Intro to Comp1", "Intro to Comp1", "Intro to Comp2", "Discrete Structures", "Soft Dev1", "Operating Systems",
+                "Computer Networks", "Computer Graphics"};
+
+Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "Room6", "Room7", "Room8"};
+
+
+HardSign = {<1,{Mon, Wed, Fri},"Eckroth","Room1","Database Systems">, <2,{Mon, Wed, Fri},"TBA", "Room7", "Big Data">};
+
+
+CoursePrefs = [[1,0.1,1,0.1,0.1,0.5,0.1,1,0.5,0.1,0.1],
+				[0.1,1,0.1,0.1,0.5,1,0.1,0.1,0.1,0.5,0.1],
+				[0.5,0.1,0.1,0.1,0.1,0.1,1,0.1,1,1,0.1],
+				[0.1,0.1,0.1,0.1,1,0.5,0.1,0.1,0.1,0.1,1],
+				[0.1,0.1,0.1,1,1,0.1,0.1,0.1,0.1,0.1,0.1]];
+PeriodPrefs = [[1,1,1,0,1,1,1,1,1,0,1],
+				[1,1,1,0,1,1,1,1,1,0,1],
+				[1,1,1,0,1,1,1,1,1,0,1],
+				[1,1,1,0,1,1,1,1,1,0,1],
+				[0,0,0,1,0,0,0,0,0,1,0]];
+
+LongCourses = {<"Database Systems", {Mon, Wed, Fri}>, <"Web App", {Mon, Wed, Fri}>, <"Big Data",  {Mon, Wed, Fri} >, <"Intro to Computing", {Mon, Wed}>,
+                <"Intro to Comp1",  {Mon, Wed, Fri}> , <"Intro to Comp1",  {Mon, Wed, Fri}>, <"Intro to Comp2",  {Mon, Wed, Fri}>, <"Discrete Structures",  {Mon, Wed, Fri}>, <"Soft Dev1",  {Mon, Wed, Fri}> , <"Operating Systems",
+                 {Mon, Wed, Fri}>, <"Computer Networks",  {Mon, Wed}>,<"Computer Graphics",  {Mon, Wed, Fri}>};
+

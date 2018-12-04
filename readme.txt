@@ -4,7 +4,8 @@ Algorithms for Tarot project
 - Kyle Burda
 
 Using IBM ILOG CPLEX 12.8
-* To run the files you need to be in /opt/ibm/ILOG/CPLEX_Studio128/opl/bin/x86-64_linux 
-* Then run the following line: 
-  LD_LIBRARY_PATH=./ ./oplrun tarot/Tarot.mod tarot/Tarot.dat
-* The output.txt file will be generated/updated with the results in tarot folder
+
+Co-Developed the algorithms for Tarot Project. Worked in a team of 8 where other teammates worked on the front-end and database. 
+
+*** What is Tarot? ***
+Tarot is a program that solves University TimeTabling Problem by scheduling classes depending on different constraints, and with some extra touches of features that suites Stetson University's Computer Science Department.
